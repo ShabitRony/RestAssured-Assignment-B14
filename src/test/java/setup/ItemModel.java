@@ -1,12 +1,8 @@
 package setup;
 
-import lombok.Getter;
-import lombok.Setter;
 
 public class ItemModel {
 
-    @Getter
-    @Setter
     private String amount;
     private String itemName;
     private String month;

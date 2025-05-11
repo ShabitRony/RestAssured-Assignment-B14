@@ -1,0 +1,1 @@
+{"uuid":"30fe437b-c7b9-436c-a5c4-17c2cc97d940","name":"Rest-Assured-B14","children":["db51bcbd-ef48-44d4-a029-d76c00c7d030"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1746957627382,"stop":1746957627387}],"afters":[],"start":1746957627360,"stop":1746957628710}

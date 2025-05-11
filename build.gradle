@@ -10,10 +10,18 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation("org.seleniumhq.selenium:selenium-java:4.31.0")
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation("org.testng:testng:7.10.2")
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation("com.googlecode.json-simple:json-simple:1.1.1")
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
     testImplementation("io.rest-assured:rest-assured:5.5.1")
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation("io.qameta.allure:allure-testng:2.29.1")
 // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation("org.testng:testng:7.10.2")
     testImplementation("commons-configuration:commons-configuration:1.10")
@@ -25,5 +33,17 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG() {
+        if (project.hasProperty("email") && project.hasProperty("password")) {
+            systemProperties.put("email", project.property("email"))
+            systemProperties.put("password", project.property("password"))
+
+            print(project.property("email"))
+            print(project.property("password"))
+        }
+        if(project.hasProperty("suiteName")){
+            systemProperties.put("suiteName",project.property(("suiteName")))
+        }
+        suites "./src/test/resources/"+systemProperties.get("suiteName")
+    }
 }
