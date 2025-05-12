@@ -1,4 +1,4 @@
-# 🧪 Daily Finance Website - Automation Suite
+# 💰 Daily Finance Website - Automation Suite
 # Project Overview
 This project automates both UI and API functionalities of the Daily Finance website using Selenium, RestAssured, TestNG, and the Page Object Model (POM) design pattern. It covers critical workflows like user registration, login, item management, and admin operations.
 # Website Link
