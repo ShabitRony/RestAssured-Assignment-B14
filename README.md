@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/b17b4fcb-31a3-4803-8d7c-ff2bc5e34e81
 
 # How to run?
 - Clone this repository from GitHub.
-- git clone
+- git clone https://github.com/ShabitRony/RestAssured-Assignment-B14.git
 - Run the test( ./gradlew test)
 - Install necessary dependencies from mvnrepository.
 - After Automation generate Allure report.
