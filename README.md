@@ -3,6 +3,12 @@
 This project automates both UI and API functionalities of the Daily Finance website using Selenium, RestAssured, TestNG, and the Page Object Model (POM) design pattern. It covers critical workflows like user registration, login, item management, and admin operations.
 # Website Link
 https://dailyfinance.roadtocareer.net/
+# Postman Documentation Link
+https://documenter.getpostman.com/view/40595257/2sB2j6AWT7
+# Newman Report
+![postmanreport](https://github.com/user-attachments/assets/b5e08b30-f4bf-4bfe-88dd-00bc133c3b9a)
+
+
 # Test Case Link
 https://docs.google.com/spreadsheets/d/1ZmJFPzt32R_jHX00ZGx7mIH22dov20sBgxvJhO3ZZew/edit?usp=sharing
 # ✅ Features Covered
